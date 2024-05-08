@@ -1,0 +1,12 @@
+flask-bcrypt
+flask-cors
+flask-jwt-extended
+flask-login
+flask-migrate
+flask-sqlachemy
+flask-wtf
+gunicorn
+psycopg2-binary
+pymodbus
+python-dotenv
+sqlachemy
