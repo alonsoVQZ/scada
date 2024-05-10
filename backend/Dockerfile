@@ -1,7 +1,7 @@
 FROM python:3.10.13
-WORKDIR .
+WORKDIR /app
 COPY requirements.txt .
 RUN pip install -r requirements.txt
-COPY src/ .
+COPY . .
 EXPOSE 5000
-CMD ["gunicorn", "-b", "0.0.0.0:5000", "src:create_app()"]
+CMD ["gunicorn", "-b", "0.0.0.0:5000", "src:src"]
